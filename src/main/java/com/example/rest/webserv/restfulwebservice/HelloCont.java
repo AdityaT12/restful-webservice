@@ -11,4 +11,8 @@ public class HelloCont {
 		return "Hello";
 	}
 	
+	@GetMapping(path = "/hello-bean")
+	public HelloBean helloBean() {
+		return new HelloBean("Hello");
+	}
 }
